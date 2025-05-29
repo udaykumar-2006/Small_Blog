@@ -1,0 +1,178 @@
+/* Reset some basics */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #fafafa;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Nav bar */
+nav {
+  background-color: #fff;
+  padding: 12px 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+  border-radius: 8px;
+  display: flex;
+  gap: 15px;
+}
+
+nav a {
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #005fa3;
+  text-decoration: underline;
+}
+
+/* Headings */
+h1, h2 {
+  margin-bottom: 15px;
+  font-weight: 700;
+  color: #222;
+}
+
+/* Post list */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  background: #fff;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgb(0 0 0 / 0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+li:hover {
+  box-shadow: 0 6px 15px rgb(0 0 0 / 0.1);
+}
+
+li h2 a {
+  color: #111;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+li h2 a:hover {
+  color: #0077cc;
+}
+
+
+small {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+
+p {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #444;
+}
+
+
+a {
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #005fa3;
+  text-decoration: underline;
+}
+
+
+form {
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgb(0 0 0 / 0.08);
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #222;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1.5px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border-color 0.3s ease;
+  resize: vertical;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  border-color: #0077cc;
+  outline: none;
+}
+
+
+button {
+  background-color: #0077cc;
+  border: none;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+  display: inline-block;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+
+form[method="POST"] button {
+  padding: 8px 16px;
+  font-weight: 600;
+}
+
+
+@media (max-width: 600px) {
+  body {
+    padding: 15px;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  form {
+    width: 100%;
+    padding: 20px;
+  }
+}
