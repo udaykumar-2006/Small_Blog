@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Blog Home</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <nav>
+    <a href="/posts">Home</a> |
+    <a href="/posts/create">Create Post</a> |
+    <a href="/about">About</a>
+  </nav>
+
+  <h1>All Blog Posts</h1>
+
+  <% if(posts.length === 0) { %>
+    <p>No posts yet. <a href="/posts/create">Create one!</a></p>
+  <% } else { %>
+    <ul>
+      <% posts.forEach(post => { %>
+        <li>
+          <h2><a href="/posts/<%= post.id %>"><%= post.title %></a></h2>
+          <p><small>By <%= post.username %> | <%= post.createdAt.toDateString() %></small></p>
+          <p><%= post.content.length > 100 ? post.content.substring(0, 100) + '...' : post.content %></p>
+          <a href="/posts/<%= post.id %>">Read More</a>
+        </li>
+      <% }) %>
+    </ul>
+  <% } %>
+</body>
+</html>
