@@ -34,7 +34,7 @@ This app is deployed on Render. You can connect your GitHub repository to Render
 npm install
 nodemon index.js
 - Deploy and access your blog online!
-- 
+  
 #Folder Structure:
 /views         # EJS templates  
 /public        # Static files (CSS, JS, images)  
