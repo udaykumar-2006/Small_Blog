@@ -17,8 +17,7 @@ This is a simple blog website built using Express.js and the EJS templating engi
 Installation
 - Clone this repository:
 git clone https://github.com/udaykumar-2006/Small_Blog.git
-
-cd Small_Blog
+-cd Small_Blog
 - Install dependencies:
 npm install
 - Run the app locally:
